@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="f0cbeff6-d1b9-4a19-b20d-a13524b37a90" activeEnvironment="Default" name="REST Project 2" resourceRoot="" soapui-version="5.3.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="9089937b-f352-43ba-a4a0-e22869342b0a" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://maps.googleapis.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://maps.googleapis.com</con:endpoint></con:endpoints><con:resource name="" path="/maps/api/place/add/json" id="4e3d442f-b829-4d0d-8f90-3039f5e5fb81"><con:settings/><con:parameters><con:parameter><con:name>Key</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="1" id="c7d7b44c-7df8-4aa8-a338-7066e0aca3ba" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:json="https://maps.googleapis.com/maps/api/place/add/json">json:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="be8064d6-26a0-449d-8b66-07dce0618e81" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://maps.googleapis.com</con:endpoint><con:request>{
+  "location": {
+    "lat": -33.8669710,
+    "lng": 151.1958750
+  },
+  "accuracy": 50,
+  "name": "Google Shoes!",
+  "phone_number": "(02) 9374 4000",
+  "address": "48 Pirrama Road, Pyrmont, NSW 2009, Australia",
+  "types": ["shoe_store"],
+  "website": "http://www.google.com.au/",
+  "language": "en-AU"
+}</con:request><con:originalUri>https://maps.googleapis.com/maps/api/place/add/json</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="Key" value="AIzaSyDq7mjgfeV9kBjWNhsTrt6eTaKlHSL4I_c" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>Key</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

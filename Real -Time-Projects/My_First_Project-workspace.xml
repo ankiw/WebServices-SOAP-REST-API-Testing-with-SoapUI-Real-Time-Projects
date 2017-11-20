@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-workspace name="My_First_Project" soapui-version="5.3.0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:project name="FirstProject_Calculator">C:/Users/AnkitaW/Documents/SOAP/FirstProject-Calculator-soapui-project.xml</con:project>
+  <con:project name="Employee_Portal">C:/Users/AnkitaW/Documents/Employee-Portal-soapui-project.xml</con:project>
+  <con:project name="Groovy_concept">C:/Users/AnkitaW/Documents/Groovy-concept-soapui-project.xml</con:project>
+  <con:project name="Rest_Book_API">C:/Users/AnkitaW/Documents/REST-Project-1-soapui-project.xml</con:project>
+  <con:project name="Google-Place-SearchAPI using REST">C:/Users/AnkitaW/Documents/Google-Place-SearchAPI-using-REST-soapui-project.xml</con:project>
+  <con:project name="REST_Google_AddPlace">C:/Users/AnkitaW/Documents/REST-Google-AddPlace-soapui-project.xml</con:project>
+  <con:project name="ADD_and_DELETE_Place">C:/Users/AnkitaW/Documents/ADD-and-DELETE-Place-soapui-project.xml</con:project>
+  <con:collectInfoForSupport>false</con:collectInfoForSupport>
+</con:soapui-workspace>

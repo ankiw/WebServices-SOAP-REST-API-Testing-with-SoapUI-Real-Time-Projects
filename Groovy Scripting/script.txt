@@ -1,0 +1,19 @@
+
+//Scope of context level lies in the testcase level 
+//Task 1:Get the hold of response done
+//Task 2:Get the desired node value from the response
+//Task 3:Get the hold of requset from Delete employee
+//Task 4:Place the desidred node value in delete employee name tag
+//Task 5:Update the XML
+
+import com.eviware.soapui.support.XmlHolder
+
+context.setPropery("Name","Ankita")
+log.info context.getProperty("Ankita")
+log.info context.expand('${#Testcase#Age}')
+log.info context.expand('${#Testcase#Dept}')
+def response= context.expend('${GetEmployeeDetails#response}')
+log.info response
+def xml= new XmlHolder(response)
+def desirednode=xml.getNodevalue("//ns:name")
+log.info desirednode

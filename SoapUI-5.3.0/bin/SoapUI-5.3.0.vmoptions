@@ -1,0 +1,13 @@
+-XX:MinHeapFreeRatio=20
+-XX:MaxHeapFreeRatio=40
+-Xms128m
+-Xmx1000m
+-Dsoapui.properties=soapui.properties
+-Dsoapui.home=C:\Users\AnkitaW\Desktop\SOAP UI\SoapUI-5.3.0/bin
+-Dsoapui.ext.libraries=C:\Users\AnkitaW\Desktop\SOAP UI\SoapUI-5.3.0/bin/ext
+-Dsoapui.ext.listeners=C:\Users\AnkitaW\Desktop\SOAP UI\SoapUI-5.3.0/bin/listeners
+-Dsoapui.ext.actions=C:\Users\AnkitaW\Desktop\SOAP UI\SoapUI-5.3.0/bin/actions
+-Dwsi.dir=C:\Users\AnkitaW\Desktop\SOAP UI\SoapUI-5.3.0/wsi-test-tools
+-Djava.library.path=C:\Users\AnkitaW\Desktop\SOAP UI\SoapUI-5.3.0/bin
+-Djava.util.Arrays.useLegacyMergeSort=true
+-splash:SoapUI-Spashscreen.png
