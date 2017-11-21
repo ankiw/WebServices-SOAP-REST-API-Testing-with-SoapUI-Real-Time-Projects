@@ -284,24 +284,22 @@
          <typ:age>?</typ:age>\r
       </typ:addEmployee>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="urn:addEmployee" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="dbffdf51-de3d-4f58-869b-3acea8cf622f"><con:settings/><con:config><script>
-//Scope of context level lies in the testcase level 
-//Task 1:Get the hold of response done
-//Task 2:Get the desired node value from the response
-//Task 3:Get the hold of requset from Delete employee
-//Task 4:Place the desidred node value in delete employee name tag
-//Task 5:Update the XML
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="urn:addEmployee" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="dbffdf51-de3d-4f58-869b-3acea8cf622f"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
 
-import com.eviware.soapui.support.XmlHolder
+context.setPropery("Name","Ankita") 
 
-context.setPropery("Name","Ankita")
-log.info context.getProperty("Ankita")
-log.info context.expand('${#Testcase#Age}')
-log.info context.expand('${#Testcase#Dept}')
-def response= context.expend('${GetEmployeeDetails#response}')
-log.info response
-def xml= new XmlHolder(response)
-def desirednode=xml.getNodevalue("//ns:name")
+log.info context.getProperty("Name") 
+
+log.info context.expand('${#Testcase#Age}') 
+
+log.info context.expand('${#Testcase#Dept}') 
+
+def response= context.expend('${GetEmployeeDetails#response}') 
+
+log.info response def xml= new XmlHolder(response) 
+
+def desirednode=xml.getNodeValue("//ns:name") 
+
 log.info desirednode</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="0d464d4e-2112-44e9-a1d7-f23e407f287f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="deleteEmployee TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="b96873ff-059b-459b-ab2e-2c2ad3909bc6" name="deleteEmployee"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EmployeeManagementServiceSoap12Binding</con:interface><con:operation>deleteEmployee</con:operation><con:request name="deleteEmployee" id="6fd40c13-21a1-4e79-815d-54df88400865"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/axis2/services/EmployeeManagementService.EmployeeManagementServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:typ="http://sample.com/reservation/guest/types">\r
    <soap:Header/>\r
    <soap:Body>\r
